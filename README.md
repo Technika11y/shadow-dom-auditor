@@ -93,3 +93,7 @@ smell-flags for a human reviewer, not confirmed exploits, and it performs no exp
 
 [Apache-2.0](LICENSE). See [`SECURITY.md`](SECURITY.md) for responsible disclosure and
 [`CONTRIBUTING.md`](CONTRIBUTING.md) to get started.
+
+---
+
+**Part of the [Technika11y](https://github.com/technika11y) suite** · [technika11y.github.io](https://technika11y.github.io/) · security, compliance, and accessibility as one discipline.
