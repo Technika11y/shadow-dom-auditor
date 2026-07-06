@@ -21,6 +21,8 @@
 | ARIA: interactive role missing an accessible name | ✅ works |
 | ARIA: `aria-labelledby`/`aria-describedby` → missing id (incl. **cross-root idref** detection) | ✅ works |
 | ARIA: positive `tabindex` focus-order smell | ✅ works |
+| ARIA: `aria-hidden` on a focusable element (keyboard-reachable but AT-invisible) | ✅ works |
+| ARIA: invalid role token, unnamed `role="img"`, duplicate light-DOM `id` | ✅ works |
 | Injection smells: inline event handlers, `javascript:` URLs | ✅ works (heuristic) |
 | Real DOM-XSS taint tracking (source→sink dataflow) | ⚠️ **not built** — [roadmap](#roadmap) |
 | Closed shadow roots | ❌ out of scope (not reachable by design) |
