@@ -11,6 +11,15 @@
 
 ---
 
+## Quick start
+
+```bash
+git clone https://github.com/technika11y/shadow-dom-auditor && cd shadow-dom-auditor
+npm install
+npx playwright install chromium
+node src/index.js https://example.com
+```
+
 ## Status — read this first
 
 **Pre-alpha (`v0.1.0-alpha`). Honest state of the code:**
