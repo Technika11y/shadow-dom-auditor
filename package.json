@@ -1,0 +1,30 @@
+{
+  "name": "@technika11y/shadow-dom-auditor",
+  "version": "0.1.0-alpha",
+  "description": "Pierces shadow DOM to surface hidden ARIA/accessibility defects and injection-sink smells that conventional scanners miss.",
+  "type": "module",
+  "bin": {
+    "shadow-dom-auditor": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "shadow-dom",
+    "web-components",
+    "aria",
+    "wcag",
+    "security",
+    "xss"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "^1.44.0"
+  }
+}
