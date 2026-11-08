@@ -33,6 +33,9 @@ node src/index.js https://example.com
 | ARIA: `aria-hidden` on a focusable element (keyboard-reachable but AT-invisible) | ✅ works |
 | ARIA: invalid role token, unnamed `role="img"`, duplicate light-DOM `id` | ✅ works |
 | Injection smells: inline event handlers, `javascript:` URLs | ✅ works (heuristic) |
+| **SARIF 2.1.0 output** (`--sarif`) — findings become GitHub code-scanning alerts | ✅ works, tested |
+| **VPAT export** (`--vpat`) — maps findings to WCAG 2.2 criteria for `vpat-generator` | ✅ works, tested |
+| Claiming "Supports" from a clean automated scan | ❌ refused by design — automation can disprove a criterion, never prove one |
 | Real DOM-XSS taint tracking (source→sink dataflow) | ⚠️ **not built** — [roadmap](#roadmap) |
 | Closed shadow roots | ❌ out of scope (not reachable by design) |
 
@@ -95,7 +98,7 @@ smell-flags for a human reviewer, not confirmed exploits, and it performs no exp
 - [ ] DOM-XSS taint tracking (source → sink dataflow), replacing the current heuristic smells
 - [ ] Slot-projection analysis (light-DOM content assigned into shadow slots)
 - [ ] `axe-core` rule bridge for full WCAG mapping
-- [ ] SARIF output for GitHub code scanning
+- [x] SARIF output for GitHub code scanning
 - [ ] `--budget` gate for the shared Technika11y CI template
 
 ## License
